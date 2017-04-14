@@ -1,13 +1,19 @@
-// ------------------------------------------------------------------
+// --------------------------------------------------------
 // Fast R-CNN
-// Copyright (c) 2015 Microsoft
-// Licensed under The MIT License [see fast-rcnn/LICENSE for details]
-// Written by Ross Girshick
-// ------------------------------------------------------------------
+// Copyright (c) Microsoft. All rights reserved.
+// Written by Ross Girshick, 2015.
+// Licensed under the BSD 2-clause "Simplified" license.
+// See LICENSE in the Fast R-CNN project root for license
+// information.
+// --------------------------------------------------------
 
+#include <algorithm>
 #include <cfloat>
+#include <vector>
 
-#include "caffe/fast_rcnn_layers.hpp"
+#include "caffe/layer.hpp"
+#include "caffe/util/math_functions.hpp"
+#include "caffe/vision_layers.hpp"
 
 using std::max;
 using std::min;
